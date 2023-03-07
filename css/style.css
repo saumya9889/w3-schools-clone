@@ -291,8 +291,10 @@ header {
 }
 .w3-banner1-content .playground-wrap {
  border-left: 4px solid #04AA6D; background-color: #ffffff;
- width: 95%;  height: 280px;
- margin: 0 auto;  padding: 1rem;
+ width: 95%;  
+ height: 280px;
+ margin: 0 auto;  
+ padding: 1rem;
  overflow-y: scroll;
 }
 .right-content-wrapper  h2{
@@ -332,7 +334,7 @@ header {
     padding-top: 5rem;
     width: 90%;
     font-family: 'Source Sans Pro', sans-serif;
-    grid-gap: 5rem;
+    grid-gap: 4rem;
 }
 .course-item{
     padding: 2rem;
@@ -385,7 +387,12 @@ header {
     font-size: 1em;
     text-decoration: none;
     cursor: pointer;
+    color: #fff;
 }
 
-
+ .course-content-item.course-grid {
+    grid-template-columns: repeat(4, 1fr);
+ }
 /* course content end */
+
+

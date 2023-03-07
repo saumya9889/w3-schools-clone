@@ -1,0 +1,17 @@
+/* Media Query */
+@media screen and (max-width: 1200px){
+    .w3-bar{
+        width: 90%;
+    }
+    .w3-bar .bar-container {
+        font-size: .865em;
+        padding: .5rem .5rem;
+    }
+      .bar-right{
+        padding-right: 0;
+    }
+    .bar-left a:nth-child(5){
+        display: none;
+    }
+    }
+/* media Query End */
