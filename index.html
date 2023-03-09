@@ -19,6 +19,7 @@
       <div class="bar-container">
         <div class="bar-left">
           <a href="#link address"><img src="image/logo.png" alt="home"></a>
+          <a href="#menu" class="menu-wrap" onclick="togglemenu()">Menu <i class="fa-solid fa-caret-down"></i></a>
           <a href="#tutorial" onclick="toggleFun()">Tutorials <i class="fa-solid fa-caret-down"></i></a>
           <a href="#refrences">Refrences</a>
           <a href="#exercises">Exercise</a>
@@ -34,6 +35,18 @@
       </div>
     </nav>
   </header>
+    <div class="menu-content-wrapper" id="menu-content-wrapper">
+        <ul>
+         <li> <a href="#tutorial" onclick="toggleFun()">Tutorials <i class="fa-solid fa-caret-down"></i></a></li>
+         <li> <a href="#refrences">Refrences</a></li>
+         <li> <a href="#exercises">Exercise</a></li>
+         <li> <a href="#signup">About</a></li>
+         <li> <a href="#bootcamp">BootCamp</a></li>
+        </ul>
+        <div class="tuto-btn">
+          <a href="#" onclick="closebtn()">×</a>
+        </div>
+    </div>
   <div class="popup-wrapper" id="popup-wrapper">
     <div class="pop-up-heading">
       <h2>Tutorials</h2>
@@ -506,6 +519,29 @@
         x.style.display = "none";
       } else {
         x.style.display = "block"
+      }
+    }
+    function togglemenu() {
+      let x = document.getElementById("menu-content-wrapper");
+      // x.style.display  === "block" ?  x.style.display = "none"
+      //  : x.style.display = "block"  // this is same as (if , else) but we are call this ternary operator es6;
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block"
+      }
+    }
+    function closebtn() {
+      let x = document.getElementById("menu-content-wrapper");
+      let pop = document.getElementById("popup-wrapper");
+      // x.style.display  === "block" ?  x.style.display = "none"
+      //  : x.style.display = "block"  // this is same as (if , else) but we are call this ternary operator es6;
+      if (x.style.display || pop.style.display === "block") {
+        x.style.display = "none";
+        pop.style.display = "none";
+      } else {
+        x.style.display = "block"
+        pop.style.display = "block"
       }
     }
   </script>
