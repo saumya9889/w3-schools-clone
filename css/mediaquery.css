@@ -147,24 +147,174 @@
 
 
 @media screen and (max-width: 480px) {
+
+    .banner-content-wrapper {
+        width: 76%;
+    }
     .bar-left .menu-wrap {
         display: block;
-        font-size: 3em;
+        font-size: 1.5em;
     }
 
     .bar-left img {
         width: 62px;
     }
-
+    .banner-wrapper {
+        height: 40vh;
+        padding-top: 2rem;
+    }
     .banner-content-wrapper h2 {
         font-size: 2em;
         padding-bottom: 4rem;
     }
 
     .banner-content-wrapper h3 {
+        font-size: .9em;
+        margin-top: -2rem;
+    }
+    .search input {
+        padding: 0.9rem 1rem;
+        width: 100%;
+    }
+    .search b {
+        padding: 0.9rem 0rem;
+    }
+    .banner-content-wrapper a {
         font-size: 1em;
+        padding-top: 2rem
     }
 
+    .w3-banner1-content h2 {
+        font-size: 1.5em;
+    }
+    .w3-banner1-content h3 {
+        font-size: .9em;
+    }
+    .button-wrap {
+        padding-top: 1rem;
+    }
+    
+    .w3-banner1 .w3-banner1-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .w3-banner1-content .button-wrap a {
+        font-size: .9em;
+        width: 190px;
+    }
+    .right-content-wrapper {
+        width: 94%;
+    }
+    .w3-banner1-content .playground-wrap {
+       width: 87%; 
+        }
+
+        .course-content-item {
+            padding-top: 3rem;
+            width: 100%;
+            grid-gap: 1rem;
+        }
+        course-item {
+            padding: 1rem;
+            width: 102%;
+        }
+        .course-content-item p {
+            padding: 0.5rem;
+        }
+        .course-content-item a {
+            font-size: .7em;
+        }
+        .course-content-item.course-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .course-item {
+            padding: 0.6rem;
+            width: 86%;
+        }
+        
+
+}
+
+@media screen and (max-width: 376px)
+{
+    .banner-content-wrapper {
+        width: 81%;
+    }
+.bar-left .menu-wrap {
+    display: block;
+    font-size: 1.3em;
+}
+.w3-bar .bar-container {
+    font-size: 0.865em;
+    /* padding: 0.5rem 0.5rem; */
+}
+
+.banner-content-wrapper h2 {
+    font-size: 1.8em;
+    padding-bottom: 4rem;
+}
+
+.right-content-wrapper {
+    width: 95%;
+}
+.w3-banner1-content .button-wrap a {
+    font-size: .8em;
+}
+.w3-banner1-content h2 {
+    font-size: 1.3em;
+}
+.w3-banner1-content .playground-wrap h1 {
+    font-size: 1.4em;
+}
+.right-content-wrapper .try-btn {
+    padding: 0.5rem 2rem;
+}
+.course-content-item p {
+    /* padding: 0.5rem; */
+    font-size: .8em;
+}
+.course-content-item a {
+    font-size: .6em;
+}
+.course-content-item h2 {
+    font-size: .9em;
+}
+}
+
+@media screen and (max-width: 326px){
+    .bar-left .menu-wrap {
+        font-size: 1.2em;
+    }
+    .w3-banner1-content .button-wrap a {
+        width: 172px;
+    }
+    .w3-banner1-content .playground-wrap h1 {
+        font-size: 1.2em;
+    }
+    .right-content-wrapper .try-btn {
+        padding: 0.5rem 1rem;
+    }
+    .right-content-wrapper {
+        padding-bottom: 0.4em;
+    }
+    .course-content-item a {
+        font-size: .5em;
+    }
+    .course-content-item {
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .course-content-item {
+        width: 88%;    
+    }
+    .course-item {
+        padding: 0.4rem;
+        width: 82%;
+    }
+    .course-content-item.course-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1rem;
+    }
 }
 
 /* media Query End */
